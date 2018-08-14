@@ -1,18 +1,26 @@
 {%extends 'base.html'%}
-
+{% load bootstrap4 %}
+{% load static %}
 {% block content %}
-    <div class="container">
+{% block styles %}
+{% bootstrap_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+<div class="contaner-fluid">
+    <div class="top">
         <h1 class="center">welcome to the my Portfolio</h1>
-        {% for project in projects %}
-        <div class="row">
-            <div class="card">
-                {{project.name}}
-                <div class="card-body">
-                    {{project.language}}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
+        <!--{% for project in projects %}-->
+        <!--<div class="row">-->
+            <!--<div class="card">-->
+                <!--{{project.name}}-->
+                <!--<div class="card-body">-->
+                    <!--{{project.language}}-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--{% endfor %}-->
     </div>
+
+</div>
 
 {% endblock %}
