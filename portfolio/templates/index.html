@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+{% block content %}
+    <div class="container">
+        <h1 class="center">welcome to the my Portfolio</h1>
+        {% for project in projects %}
+        <div class="row">
+            <div class="card">
+                {{project.name}}
+                <div class="card-body">
+                    {{project.language}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
