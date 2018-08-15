@@ -21,23 +21,75 @@
         </div>
     </div>
     <div class="skills">
-
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2 ht">
+                <div class="image">
+                    <img src="{% static "image/test.png" %}" alt="test">
+                </div>
+                <div class="text">
+                    <p class="html">HTML</p>
+                </div>
+            </div>
+            <div class="col-md-2 ht">
+                <div class="image">
+                    <img src="{% static "image/post.png" %}" alt="test">
+                </div>
+                <div class="text">
+                    <p class="html">PostgreSQL</p>
+                </div>
+            </div>
+            <div class="col-md-2 ht">
+                <div class="image">
+                    <img src="{% static "image/angular.png" %}" alt="test">
+                </div>
+                <div class="text">
+                    <p class="html">Angular</p>
+                </div>
+            </div>
+            <div class="col-md-2 ht">
+                <div class="image">
+                    <img src="{% static "image/flask.png" %}" alt="test">
+                </div>
+                <div class="text">
+                    <p class="html">Flask</p>
+                </div>
+            </div>
+            <div class="col-md-2 ht">
+                <div class="image">
+                    <img src="{% static "image/django.png" %}" alt="test">
+                </div>
+                <div class="text">
+                    <p class="html">Django</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
     </div>
     <div class="projects">
-        <h1 class="center">welcome to the my Portfolio</h1>
-        <!--{% for project in projects %}-->
-        <!--<div class="row">-->
-        <!--<div class="card">-->
-        <!--{{project.name}}-->
-        <!--<div class="card-body">-->
-        <!--{{project.language}}-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--{% endfor %}-->
+        <div class="proj">
+            <p>Projects</p>
+        </div>
+        <div class="row">
+                    {% for project in projects %}
+            <div class="col-4">
+                {{project.name}}
+            </div>
+
+
+
+        {% endfor %}
+
+        </div>
+
     </div>
     <div class="contact">
-
+        <div class="title">
+            Contacts
+        </div>
+        <div class="info">
+            <p class="const">under construction</p>
+        </div>
     </div>
 
 </div>
