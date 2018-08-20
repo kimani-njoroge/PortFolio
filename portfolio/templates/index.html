@@ -7,90 +7,111 @@
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 <div class="contaner-fluid">
-    <div class="top">
-        <div class="me">
-            <div class="name">
-                <p class="test">Hello,I'm Kimani Njoroge.<br>
-                    I'm a full-stack web developer.</p>
-            </div>
-            <div class="alittle">
-                <button class="btn btn-outline-info">
-                    View my Work
-                </button>
-            </div>
+    <div class="row">
+        <div class="col-md-2">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>My Portfolio</h3>
+                </div>
+                <div class="links">
+                    <a href="#" class="links">Home</a>
+                    <a href="#" class="links">About</a>
+                    <a href="#" class="links">Projects</a>
+                    <a href="#" class="links">Contacts</a>
+                </div>
+
+
+            </nav>
         </div>
-    </div>
-    <div class="skills">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/test.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">HTML</p>
-                </div>
-            </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/post.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">PostgreSQL</p>
+        <div class="col-md-10">
+            <div class="top">
+                <div class="me">
+                    <div class="name">
+                        <p class="test">Hello,I'm Kimani Njoroge.<br>
+                            I'm a full-stack web developer.</p>
+                    </div>
+                    <div class="alittle">
+                        <button class="btn btn-outline-info">
+                            View my Work
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/angular.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">Angular</p>
+            <div class="skills">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2 ht">
+                        <div class="image">
+                            <img src="{% static "image/test.png" %}" alt="test">
+                        </div>
+                        <div class="text">
+                            <p class="html">HTML</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ht">
+                        <div class="image">
+                            <img src="{% static "image/post.png" %}" alt="test">
+                        </div>
+                        <div class="text">
+                            <p class="html">PostgreSQL</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ht">
+                        <div class="image">
+                            <img src="{% static "image/angular.png" %}" alt="test">
+                        </div>
+                        <div class="text">
+                            <p class="html">Angular</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ht">
+                        <div class="image">
+                            <img src="{% static "image/flask.png" %}" alt="test">
+                        </div>
+                        <div class="text">
+                            <p class="html">Flask</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ht">
+                        <div class="image">
+                            <img src="{% static "image/django.png" %}" alt="test">
+                        </div>
+                        <div class="text">
+                            <p class="html">Django</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/flask.png" %}" alt="test">
+            <div class="projects">
+                <div class="proj">
+                    <p>Projects</p>
                 </div>
-                <div class="text">
-                    <p class="html">Flask</p>
-                </div>
-            </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/django.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">Django</p>
-                </div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-    <div class="projects">
-        <div class="proj">
-            <p>Projects</p>
-        </div>
-        <div class="row">
+                <div class="row">
                     {% for project in projects %}
-            <div class="col-4">
-                {{project.name}}
+                    <div class="col-4">
+                        {{project.name}}
+                    </div>
+
+
+
+                    {% endfor %}
+
+                </div>
+
             </div>
-
-
-
-        {% endfor %}
-
-        </div>
-
-    </div>
-    <div class="contact">
-        <div class="title">
-            Contacts
-        </div>
-        <div class="info">
-            <p class="const">under construction</p>
+            <div class="contact">
+                <div class="title">
+                    Contacts
+                </div>
+                <div class="info">
+                    <p class="const">under construction</p>
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 </div>
 

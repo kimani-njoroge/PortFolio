@@ -71,5 +71,27 @@
 .const{
     font-size: 50px;
     color: white;
-
+}
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: black;
+    color: #fff;
+    transition: all 0.3s;
+    padding-right:17%;
+}
+.links{
+    color: white;
+    /*text-align: center;*/
+    /*margin-bottom: 5%;*/
+    /*padding-left: 80px;*/
+    /*padding-top: 400px;*/
+    padding: 63px 80px 34px 31px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
 }
