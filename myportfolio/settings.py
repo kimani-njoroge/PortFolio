@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'bootstrap4',
+    'pyuploadcare.dj',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +75,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
-
+UPLOADCARE = {
+    'pub_key': config('PUBLIC_KEY'),
+    'secret': config('SECRET_KEY_UPLOAD'),
+}
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -138,6 +142,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 django_heroku.settings(locals())
 MODE = config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
+
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE') == "dev":
