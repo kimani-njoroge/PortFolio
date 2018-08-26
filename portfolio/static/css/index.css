@@ -63,6 +63,7 @@
     color: white;
     font-family: 'Josefin Slab', serif;
     font-size: 40px;
+    margin-left: 44%;
 }
 .info{
     margin:auto;
@@ -157,4 +158,26 @@
 .responsive{
     font-size:4vw;
 }
+}
+.mail{
+    margin-left: 43%;
+}
+.far{
+    font-size: 3em;
+    padding-left: 5%;
+}
+#mail{
+    font-size: 20px;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+.fab{
+    font-size:3em;
+    margin-left: 43%;
+}
+.github{
+    margin-top: 3%;
+    margin: auto;
+    width: 56%;
+    padding: 10px;
 }

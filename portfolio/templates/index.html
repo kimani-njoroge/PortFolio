@@ -6,6 +6,7 @@
 {% bootstrap_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 {% endblock %}
 
 <div class="contaner-fluid">
@@ -90,9 +91,14 @@
         <div class="title">
             Contacts
         </div>
-        <div class="info">
-            <p class="const">under construction</p>
+        <div class="mail">
+            <p><i class="far fa-paper-plane"></i></p>
+            <p><a href="mailto:kimani064@gmail.com" id="mail">kimani064@gmail.com</a></p>
         </div>
+        <div class="github">
+            <a href="https://github.com/kimani-njoroge"><i class="fab fa-github"></i></a>
+        </div>
+
     </div>
 </div>
 
@@ -101,3 +107,7 @@
 
 
 {% endblock %}
+<!--{% block scripts %}-->
+<!--{{block.super}}-->
+    <!--&lt;!&ndash;<script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>&ndash;&gt;-->
+<!--{% endblock %}-->
