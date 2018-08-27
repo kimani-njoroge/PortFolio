@@ -9,7 +9,7 @@
 .skills{
     /*background-color: #205067;*/
     overflow-x: hidden;
-    height: 50vh;
+    height: 75vh;
 }
 .projects{
     background-color: #153342;
@@ -180,4 +180,13 @@
     margin: auto;
     width: 56%;
     padding: 10px;
+}
+.skill{
+    border-left: 2px solid grey;
+
+}
+.toast{
+    height:75vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

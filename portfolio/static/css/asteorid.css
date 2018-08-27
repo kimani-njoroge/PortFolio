@@ -325,3 +325,44 @@ ins {
     overflow: hidden;
     z-index: 1;
 }
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  and (-webkit-min-device-pixel-ratio : 2) {
+.btn{
+  width:auto;
+}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px)  and (-webkit-device-pixel-ratio: 2){
+.btn{
+  width:auto;
+}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
+.btn{
+  width:auto;
+}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 2){
+.btn{
+  width:auto;
+}
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+.btn{
+  width:auto;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.btn{
+  width:auto;
+}
+}
