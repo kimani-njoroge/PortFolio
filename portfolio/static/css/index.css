@@ -19,7 +19,7 @@
 .contact{
     background-color: #060F13;
     overflow-x: hidden;
-    height: 50vh;
+    height: 28vh;
 }
 .me{
     margin:auto;
@@ -102,62 +102,62 @@
 }
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  and (-webkit-min-device-pixel-ratio : 2) {
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 
 /* iPhone 5 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px)  and (-webkit-device-pixel-ratio: 2){
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2){
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 
 /* iPhone 6+ ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 2){
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 
 /* Samsung Galaxy S5 ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (-webkit-device-pixel-ratio: 3){
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-.responsive_h1{
-    font-size:6vw;
-}
-.responsive{
-    font-size:4vw;
-}
+    .responsive_h1{
+        font-size:6vw;
+    }
+    .responsive{
+        font-size:4vw;
+    }
 }
 .mail{
     margin-left: 43%;
@@ -189,4 +189,50 @@
     height:75vh;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.pic{
+    width:50%;
+    padding:10px;
+    margin:auto;
+}
+.aboutme{
+    width:50%;
+    padding:10px;
+    margin:auto;
+    padding-left: 131px;
+    font-family: 'Josefin Slab', serif;
+}
+#abt{
+    width:50%;
+}
+.nav-item1{
+    margin-left: 755px;
+}
+.nav-item{
+    margin-right: 20px;
+}
+#abt-info{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size:20px;
+}
+.title-skill{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}
+#skillunderline{
+    width: 30%;
+}
+.skill1{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+.skill2{
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+}
+.row-skill{
+    margin-top:10%;
 }
