@@ -14,12 +14,12 @@
 .projects{
     background-color: #153342;
     overflow-x: hidden;
-    height: 70vh;
+    height: auto;
 }
 .contact{
     background-color: #060F13;
     overflow-x: hidden;
-    height: 28vh;
+    height: auto;
 }
 .me{
     margin:auto;
@@ -53,11 +53,6 @@
 }
 .proj{
     color: white;
-}
-.col-4{
-    color: white;
-    border-right: 3px solid grey;
-    height:62vh;
 }
 .title{
     color: white;
@@ -164,7 +159,7 @@
 }
 .far{
     font-size: 3em;
-    padding-left: 5%;
+
 }
 #mail{
     font-size: 20px;
@@ -173,7 +168,7 @@
 }
 .fab{
     font-size:3em;
-    margin-left: 43%;
+    margin-left: 38%;
 }
 .github{
     margin-top: 3%;
@@ -235,4 +230,38 @@
 }
 .row-skill{
     margin-top:10%;
+}
+.card{
+    width:50%;
+}
+#project{
+    text-align: center;
+    margin-top:2.5%;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+}
+#img{
+    padding-left:5%;
+}
+.col-md-6{
+    padding-bottom:5%;
+}
+.projname{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Josefin Slab', serif;
+}
+.desc{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+}
+.telephone{
+    font-size: 20px;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    margin-left: 43%;
+    padding-top: 1%;
 }

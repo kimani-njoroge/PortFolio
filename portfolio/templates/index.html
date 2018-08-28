@@ -70,19 +70,20 @@
     </div>
     <div class="projects" id="projects">
         <div class="proj">
-            <p>Projects</p>
+            <p id="project">Projects</p>
         </div>
+        {% for project in projects %}
         <div class="row">
-            {% for project in projects %}
-            <div class="col-4">
-                {{project.name}}
+            <div class="col-md-6">
+                <img id="img" src="{{project.proj_image.cdn_url}}" alt="" width="600" height="400">
+            </div>
+            <div class="col-md-6">
+                <p class="projname">{{project.name}}</p>
+                <p class="desc">{{project.desc}}</p>
             </div>
 
-
-
-            {% endfor %}
-
         </div>
+        {% endfor %}
 
     </div>
     <div class="contact">
@@ -90,11 +91,14 @@
             Contacts
         </div>
         <div class="mail">
-            <p><i class="far fa-paper-plane"></i></p>
-            <p><a href="mailto:kimani064@gmail.com" id="mail">kimani064@gmail.com</a></p>
+            <p><i class="far fa-paper-plane"></i><a href="mailto:kimani064@gmail.com" id="mail">kimani064@gmail.com</a></p>
+
         </div>
         <div class="github">
-            <a href="https://github.com/kimani-njoroge"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/kimani-njoroge"><i class="fab fa-github"></i><a href="https://github.com/kimani-njoroge">  kimani-njoroge</a></a>
+        </div>
+        <div class="telephone">
+            <p>Tel: (+254) 713 787 851 </p>
         </div>
 
     </div>
