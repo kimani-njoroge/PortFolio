@@ -24,67 +24,66 @@
             </div>
         </div>
     </div>
-    <div class="skills">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/test.png" %}" alt="test">
+    <div class="skills" id="skills">
+        <div class="row toast">
+            <div class="col-md-6 about-me">
+                <div class="pic">
+                    <img class="rounded-circle" src="{% static "image/furkan-avatar-dribbble_1x.png" %}" alt="">
                 </div>
-                <div class="text">
-                    <p class="html">HTML</p>
+                <h2 class="aboutme">About Me</h2>
+                <hr id="abt">
+                <div class="content-abt">
+                    <p id="abt-info">I'm a Full Stack developer based in Nairobi. I'm passionate<br>
+                        and keen about software development. When I'm not coding<br>
+                        I enjoy cooking and listening to music.<br>
+                    </p>
                 </div>
+
             </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/post.png" %}" alt="test">
+            <div class="col-md-6 skill">
+                <div class="title-skill">
+                    <h3><i class="fas fa-cogs"></i>Skills</h3>
+                    <hr id="skillunderline">
                 </div>
-                <div class="text">
-                    <p class="html">PostgreSQL</p>
+                <div class="row row-skill">
+                    <div class="col-md-6 skill1">
+                        <ul>
+                            <p>HTML & CSS</p>
+                            <p>JavaScript</p>
+                            <p>Angular</p>
+                            <p>TypeScript</p>
+                            <p>SQL</p>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 skill2">
+                        <ul>
+                            <p>Python</p>
+                            <p>Django</p>
+                            <p>Flask</p>
+                            <p>PostgreSQL</p>
+                        </ul>
+                    </div>
                 </div>
+                <hr style="width: 50%;">
             </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/angular.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">Angular</p>
-                </div>
-            </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/flask.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">Flask</p>
-                </div>
-            </div>
-            <div class="col-md-2 ht">
-                <div class="image">
-                    <img src="{% static "image/django.png" %}" alt="test">
-                </div>
-                <div class="text">
-                    <p class="html">Django</p>
-                </div>
-            </div>
-            <div class="col-md-1"></div>
         </div>
     </div>
-    <div class="projects">
+    <div class="projects" id="projects">
         <div class="proj">
-            <p>Projects</p>
+            <p id="project">Projects</p>
         </div>
+        {% for project in projects %}
         <div class="row">
-            {% for project in projects %}
-            <div class="col-4">
-                {{project.name}}
+            <div class="col-md-6">
+                <img id="img" src="{{project.proj_image.cdn_url}}" alt="" width="600" height="400">
+            </div>
+            <div class="col-md-6">
+                <p class="projname">{{project.name}}</p>
+                <p class="desc">{{project.desc}}</p>
             </div>
 
-
-
-            {% endfor %}
-
         </div>
+        {% endfor %}
 
     </div>
     <div class="contact">
@@ -92,11 +91,14 @@
             Contacts
         </div>
         <div class="mail">
-            <p><i class="far fa-paper-plane"></i></p>
-            <p><a href="mailto:kimani064@gmail.com" id="mail">kimani064@gmail.com</a></p>
+            <p><i class="far fa-paper-plane"></i><a href="mailto:kimani064@gmail.com" id="mail">kimani064@gmail.com</a></p>
+
         </div>
         <div class="github">
-            <a href="https://github.com/kimani-njoroge"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/kimani-njoroge"><i class="fab fa-github"></i><a href="https://github.com/kimani-njoroge">  kimani-njoroge</a></a>
+        </div>
+        <div class="telephone">
+            <p>Tel: (+254) 713 787 851 </p>
         </div>
 
     </div>
@@ -107,7 +109,3 @@
 
 
 {% endblock %}
-<!--{% block scripts %}-->
-<!--{{block.super}}-->
-    <!--&lt;!&ndash;<script type="text/javascript" src="{%static 'js/newsletter.js'%}"></script>&ndash;&gt;-->
-<!--{% endblock %}-->
