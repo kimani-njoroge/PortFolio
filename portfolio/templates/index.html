@@ -80,13 +80,14 @@
             <div class="col-md-6">
                 <p class="projname">{{project.name}}</p>
                 <p class="desc">{{project.desc}}</p>
+                <a href="{{project.url}}"><button class="btn btn-outline-info site">View Site</button></a>
             </div>
 
         </div>
         {% endfor %}
 
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="title">
             Contacts
         </div>
@@ -103,9 +104,4 @@
 
     </div>
 </div>
-
-
-
-
-
 {% endblock %}
