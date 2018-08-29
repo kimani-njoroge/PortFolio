@@ -311,7 +311,7 @@
         width: 95%
     }
     .skills{
-        height:74vh;
+        height:52vh;
     }
     #abtmedq{
         padding-left:100px;
@@ -331,6 +331,9 @@
     }
     .git-info{
         margin-left:-17%;
+    }
+    #toast{
+        height: 52vh;
     }
 }
 .mail{
