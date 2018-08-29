@@ -10,6 +10,7 @@ class Project(models.Model):
     language = models.CharField(max_length=30)
     desc = models.TextField()
     author = models.CharField(max_length=20)
+    url = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
